@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<nav>
+    <h2>NeoBank</h2>
+    <div>
+        <a href="/profile">Profile</a>
+        <a href="/deposit">Deposit</a>
+        <a href="/withdraw">Withdraw</a>
+        <a href="/history">History</a>
+        <a href="/logout">Logout</a>
+    </div>
+</nav>
+
+<section>
+    <h1>Welcome, {{ user[0] }}</h1>
+    <h2>Balance: ₹ {{ user[1] }}</h2>
+
+    <h3>Last 5 Transactions</h3>
+
+    {% if transactions %}
+        {% for t in transactions %}
+            <p>{{ t[0] }} - ₹{{ t[1] }} on {{ t[2] }}</p>
+        {% endfor %}
+    {% else %}
+        <p>No transactions yet</p>
+    {% endif %}
+</section>
+
+
+</body>
+</html>

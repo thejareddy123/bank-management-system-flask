@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    min-height: 100vh;          /* IMPORTANT */
+    font-family: Arial;
+    background: url("/static/images/bank\ note.jpeg") no-repeat center center;
+    background-size: cover;     /* FULL SCREEN */
+    background-attachment: fixed;
+    color: white;
+}
+
+
+/* Navbar */
+nav{
+    background:rgba(0,0,0,0.7);
+    padding:15px 40px;
+}
+
+nav h2{
+    display:inline;
+}
+
+nav div{
+    float:right;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+/* Center Section */
+section{
+    text-align:center;
+    margin-top:120px;
+}
+
+/* Forms */
+form{
+    background:rgba(0,0,0,0.7);
+    width:350px;
+    margin:60px auto;
+    padding:25px;
+    border-radius:10px;
+}
+
+input, textarea, button{
+    width:100%;
+    padding:8px;
+    margin-top:10px;
+}
+
+button{
+    background:#00e0ff;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+h2{
+    margin-top:15px;
+    color:#00e0ff;
+}

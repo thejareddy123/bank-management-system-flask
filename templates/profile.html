@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<nav>
+    <h2>NeoBank</h2>
+    <div>
+        <a href="/user_home">Home</a>
+        <a href="/logout">Logout</a>
+    </div>
+</nav>
+
+<section>
+    <h1>Your Profile</h1>
+    <form method="POST">
+
+        <p> Name:<input name="name" value="{{ user[1] }}"></p>
+
+        <p> Age:<input name="age" value="{{ user[2] }}"></p>
+
+        <p> DOB:<input value="{{ user[3] }}" disabled></p>
+
+        <p>Aadhar: <input value="{{ user[4] }}" disabled></p>
+        
+        <p>Phone: <input name="phone" value="{{ user[5] }}"></p>
+
+        <p>Email: <input value="{{ user[6] }}" disabled></p>
+
+        <p>Place: <input name="place" value="{{ user[7] }}"></p>
+
+        <p>Address: <textarea name="address">{{ user[8] }}</textarea> </p>
+
+        <p>Balance: ₹ {{ user[10] }}</p>
+
+        <button>Update Profile</button>
+        <br> </br>
+        <a href="/user_home" style="color:#00e0ff;">Back to Dashboard</a>
+    </form>
+</section>
+
+
+</body>
+</html>
