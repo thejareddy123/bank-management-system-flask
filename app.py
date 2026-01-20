@@ -7,7 +7,7 @@ app.secret_key = "bank_secret"
 db = mysql.connector.connect(
     host = "localhost",
     user = "root",
-    password = "Theja@123",
+    password = "your_password in db",
     database = "bank_app"
 )
 cursor = db.cursor()
@@ -167,4 +167,5 @@ def history():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
